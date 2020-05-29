@@ -45,9 +45,10 @@ li, ul {
   height: 100vh;
   background: rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   position: absolute;
   z-index: 3;
+  display: none;
 }
 .info-about .about-box {
   width: 100%;
@@ -169,7 +170,14 @@ li, ul {
   color: #fff;
   opacity: 0.65;
 }
-.content-top .dropdown-combinations .dropdown .text-x2, .content-top .dropdown-combinations .dropdown .text-x3 {
+.content-top .dropdown-combinations .dropdown .text-x2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+  opacity: 1;
+}
+.content-top .dropdown-combinations .dropdown .text-x3 {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
@@ -387,7 +395,7 @@ li, ul {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   -webkit-backdrop-filter: blur(35px);
-  backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
   outline: none;
   cursor: pointer;
   transform: skew(-10deg);
@@ -455,6 +463,10 @@ li, ul {
 .content-bottom .content-bottom_center .btn-twist:active {
   transform: scale(0.9);
 }
+.content-bottom .content-bottom_right {
+  position: relative;
+  z-index: 7;
+}
 .content-bottom .content-bottom_right .buttons {
   display: flex;
   align-items: flex-end;
@@ -466,7 +478,7 @@ li, ul {
   line-height: 1px;
   background: rgba(255, 255, 255, 0.15);
   -webkit-backdrop-filter: blur(35px);
-  backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
   border-radius: 10px;
   transform: skewX(-15deg);
   outline: none;
